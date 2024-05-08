@@ -34,20 +34,21 @@
    
     <!-- preloader end -->
 
-    <!-- header area start -->
-    <header>
-        <div id="header-sticky" class="header-area header-transparent-2 header-border header-sticky header-sticky-white">
-            <div class="header-main header-main-1 header-main-2 header-main-3 header-padding pl-50 pr-50">
+     <!-- header area start -->
+     <header>
+        <div id="header-sticky" class="header-area header-transparent header-sticky">
+            <div class="header-main header-main-1 header-padding pl-50 pr-50">
                 <div class="container-fluid">
                     <div class="row align-items-center">
-                        <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-6 col-sm-4 col-4">
+                        <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-6 col-sm-4 col-6">
                             <div class="header-left p-rel d-flex align-items-center">
-                                <div class="logo pr-55 d-inline-block">
-                                    <a href="index.html"><img src="assets/img/logo/trendo-black.png" alt=""></a>
+                                <div class="logo pr-55  " >
+                                    
+                                    <a href="index.html"><img src="assets/img/logo/trendo-white-1.png" alt="" ></a>
                                 </div>
                                 <div class="main-menu">
                                     <nav id="mobile-menu">
-                                        <ul>
+                                       <ul>
                                             <li><a href="index.html">Home</a>
                                                 <ul class="sub-menu">
                                                     <li><a href="index.html">Home Layout 1</a></li>
@@ -61,7 +62,6 @@
                                                 <a href="shop.html">Shop <i class="icon-arrow-down"></i></a>
                                                 <ul class="mega-menu mega-menu-2-col">
                                                    <li class="has-dropdown">
-                                                       <a href="shop.html">Shop Pages</a>
                                                        <ul class="has-dropdown">
                                                            <li><a href="shop-right-sidebar.html">Right Sidebar</a></li>
                                                            <li><a href="shop.html">Left Sidebar</a></li>
@@ -96,7 +96,6 @@
                                                 <a href="about-us.html">Pages</a>
                                                 <ul class="mega-menu mega-full mega-menu-4-col">
                                                   <li class="has-dropdown">
-                                                <a href="product-details.html">Product Layout</a>
                                                 <ul class="has-dropdown">
                                                     <li><a href="product-details.html">Product Details Layout 1</a></li>
                                                     <li><a href="product-details-v2.html">Product Details Layout 2</a></li>
@@ -132,12 +131,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-8 col-8">
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-8 col-6">
                             <div class="header-right-wrapper d-flex align-items-center justify-content-end">
-                                <div class="header-right  d-flex align-items-center justify-content-end">
+                                <div class="header-right d-flex align-items-center ">
                                     <a href="login.html" class="d-none d-xxl-inline-block">Login / Register</a>
-                                    <div class="header-icon d-inline-block ml-30">
-                                        <a href="javascript:void(0)" class="search-toggle d-none d-sm-inline-block"><i class="fal fa-search"></i></a>
+                                    <div class="header-icon d-flex align-items-center ml-30">
+                                        <a href="javascript:void(0)" class="search-toggle  d-sm-inline-block"><i class="fal fa-search"></i></a>
                                         <a href="wishlist.html" class="d-none d-xl-inline-block"><i class="fal fa-heart"></i></a>
                                         <button type="button" data-bs-toggle="modal" data-bs-target="#cartMiniModal"><i class="fal fa-shopping-cart"></i><span>2</span></button>
                                     </div>
@@ -160,87 +159,115 @@
 
     <!-- cart mini area start -->
     <div class="cartmini__area">
-        <div class="modal fade" id="cartMiniModal" tabindex="-1" aria-labelledby="cartMiniModal" aria-hidden="true">
-            <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="cartmini__wrapper">
-                    <div class="cartmini__top d-flex align-items-center justify-content-between">
-                        <h4>Your Cart</h4>
-                        <div class="cartminit__close">
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#cartMiniModal" class="cartmini__close-btn"> <i class="fal fa-times"></i></button>
-                        </div>
-                    </div>
-                    <div class="cartmini__list">
-                        <ul>
-                            <li class="cartmini__item p-rel d-flex align-items-start">
-                                <div class="cartmini__thumb mr-15">
-                                    <a href="product-details.html">
-                                        <img src="assets/img/products/product-1.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="cartmini__content">
-                                    <h3 class="cartmini__title">
-                                        <a href="product-details.html">Form Armchair Walnut Base</a>
-                                    </h3>
-                                    <span class="cartmini__price">
-                                        <span class="price">1 × $70.00</span>
-                                    </span>
-                                </div>
-                                <a href="#" class="cartmini__remove">
-                                    <i class="fal fa-times"></i>
-                                </a>
-                            </li>
-                            <li class="cartmini__item p-rel d-flex align-items-start">
-                                <div class="cartmini__thumb mr-15">
-                                    <a href="product-details.html">
-                                        <img src="assets/img/products/product-2.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="cartmini__content">
-                                    <h3 class="cartmini__title">
-                                        <a href="product-details.html">Form Armchair Simon Legald</a>
-                                    </h3>
-                                    <span class="cartmini__price">
-                                        <span class="price">1 × $95.99</span>
-                                    </span>
-                                </div>
-                                <a href="#" class="cartmini__remove">
-                                    <i class="fal fa-times"></i>
-                                </a>
-                            </li>
-                            <li class="cartmini__item p-rel d-flex align-items-start">
-                                <div class="cartmini__thumb mr-15">
-                                    <a href="product-details.html">
-                                        <img src="assets/img/products/product-3.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="cartmini__content">
-                                    <h3 class="cartmini__title">
-                                        <a href="product-details.html">Antique Chinese Armchairs</a>
-                                    </h3>
-                                    <span class="cartmini__price">
-                                        <span class="price">1 × $120.00</span>
-                                    </span>
-                                </div>
-                                <a href="#" class="cartmini__remove">
-                                    <i class="fal fa-times"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="cartmini__total d-flex align-items-center justify-content-between">
-                        <h5>Total</h5>
-                        <span>$180.00</span>
-                    </div>
-                    <div class="cartmini__bottom">
-                        <a href="cart.html" class="s-btn w-100 mb-20">view cart</a>
-                        <a href="checkout.html" class="s-btn s-btn-2 w-100">checkout</a>
+    <div class="modal fade" id="cartMiniModal" tabindex="-1" aria-labelledby="cartMiniModal" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="cartmini__wrapper">
+                <div class="cartmini__top d-flex align-items-center justify-content-between">
+                    <h4>Your Cart</h4>
+                    <div class="cartminit__close">
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#cartMiniModal" class="cartmini__close-btn"> <i class="fal fa-times"></i></button>
                     </div>
                 </div>
-            </div>
+                <div class="cartmini__list">
+                    <ul>
+                        <li class="cartmini__item p-rel d-flex align-items-start">
+                            <div class="cartmini__thumb mr-15">
+                                <a href="product-details.html">
+                                    <img src="assets/img/products/product-1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="cartmini__content">
+                                <h3 class="cartmini__title">
+                                    <a href="product-details.html">Form Armchair Walnut Base</a>
+                                </h3>
+                                <span class="cartmini__price">
+                                    <span class="price">1 × $70.00</span>
+                                </span>
+                            </div>
+                            <a href="#" class="cartmini__remove">
+                                <i class="fal fa-times"></i>
+                            </a>
+                        </li>
+                        <li class="cartmini__item p-rel d-flex align-items-start">
+                            <div class="cartmini__thumb mr-15">
+                                <a href="product-details.html">
+                                    <img src="assets/img/products/product-2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="cartmini__content">
+                                <h3 class="cartmini__title">
+                                    <a href="product-details.html">Form Armchair Simon Legald</a>
+                                </h3>
+                                <span class="cartmini__price">
+                                    <span class="price">1 × $95.99</span>
+                                </span>
+                            </div>
+                            <a href="#" class="cartmini__remove">
+                                <i class="fal fa-times"></i>
+                            </a>
+                        </li>
+                        <li class="cartmini__item p-rel d-flex align-items-start">
+                            <div class="cartmini__thumb mr-15">
+                                <a href="product-details.html">
+                                    <img src="assets/img/products/product-3.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="cartmini__content">
+                                <h3 class="cartmini__title">
+                                    <a href="product-details.html">Antique Chinese Armchairs</a>
+                                </h3>
+                                <span class="cartmini__price">
+                                    <span class="price">1 × $120.00</span>
+                                </span>
+                            </div>
+                            <a href="#" class="cartmini__remove">
+                                <i class="fal fa-times"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cartmini__total d-flex align-items-center justify-content-between">
+                    <table >
+                        
+                        
+                        <tbody>
+                           <tr class="cart-subtotal">
+                                 <th>Cart Subtotal</th>
+                                 <td><span class="amount">$220.00</span></td>
+                           </tr>
+                           <tr class="shipping">
+                                 <th>Shipping charge</th>
+                                 <td >
+                                    <ul>
+                                       <li>
+                                             <!-- <input type="radio" name="shipping" /> -->
+                                             <label>
+                                                <span class="amount">$7.00</span>
+                                             </label>
+                                       </li>
+                                       
+                                    </ul>
+                                 </td>
+                           </tr>
+                           <tr class="order-total">
+                                 <th>Order Total</th>
+                                 <td><strong><span class="amount">$227.00</span></strong>
+                                 </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                   
+                </div>
+                <div class="cartmini__bottom">
+                    <a href="cart.html" class="s-btn w-100 mb-20">view cart</a>
+                    <a href="checkout.html" class="s-btn s-btn-2 w-100">checkout</a>
+                </div>
             </div>
         </div>
+        </div>
     </div>
+</div>
     <!-- cart mini area end -->
 
     <!-- search area start -->

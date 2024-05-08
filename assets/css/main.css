@@ -1845,7 +1845,7 @@ input:-ms-input-placeholder {
 }
 
 .black-bg-3 {
-  background-color: #252525;
+  background-color: var(--clr-common-white);
 }
 
 .gray-bg {
@@ -2581,17 +2581,23 @@ input:-ms-input-placeholder {
   padding: 0 30px;
   font-size: 13px;
   font-weight: 500;
-  color: var(--clr-common-black);
-  border: 1px solid var(--clr-common-black);
+  color: var(--clr-common-white);
+  border: 1px solid var(--clr-common-purple);
   text-transform: uppercase;
+  background: var(--clr-common-purple);
+
 }
 .s-btn:hover {
   color: var(--clr-common-white);
   background: var(--clr-common-black);
+  border: 1px solid var(--clr-common-black);
+
 }
 .s-btn-2 {
   color: var(--clr-common-white);
   background: var(--clr-common-black);
+  border: 1px solid var(--clr-common-black);
+
 }
 .s-btn-2:hover {
   background: var(--clr-common-purple);
@@ -4317,7 +4323,7 @@ input:-ms-input-placeholder {
 .s-subtitle:is(.s-subtitle-2) i {
   color: var(--clr-common-white);
   background: var(--clr-common-purple);
-  box-shadow: 0px 10px 10px 0px var(--clr-shadow-1);
+  box-shadow: 0px 5px 10px 0px var(--clr-common-purple);
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .s-subtitle:is(.s-subtitle-2) {
@@ -5048,6 +5054,9 @@ input:-ms-input-placeholder {
     width: 100%;
     height: 100%;
    
+  }
+  .header-left{
+    margin-left: 10px;
   }
 }
 
@@ -9105,6 +9114,17 @@ p.checkout-coupon input[type=text]:focus {
   font-weight: 400;
   margin-bottom: 15px;
   text-transform: capitalize;
+  
+}
+.breadcrumb-area-3{
+  margin-top: 40px;
+  padding-top: 100px;
+  /* background-color: red; */
+}
+.cart-area{
+  /* background-color: yellow; */
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 @media (max-width: 575px) {
   .breadcrumb-wrapper-2 h3 {
@@ -9546,14 +9566,21 @@ p.checkout-coupon input[type=text]:focus {
   color: var(--clr-common-white);
   border-color: transparent;
 }
+.logo-shop-product-actions  {
+align-items: center;
+}
 
 .logo-shop-product-actions a {
   margin-right: 6px;
 }
 @media (max-width: 575px) {
   .logo-shop-product-actions a {
-    margin-bottom: 6px;
+    /* margin-bottom: 6px; */
   }
+  .logo-cart-btn{
+    padding: 0 45px;
+  }
+  
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -10043,12 +10070,15 @@ p.checkout-coupon input[type=text]:focus {
   font-weight: 400;
   color: var(--clr-soft-gray-2);
 }
-.cartmini__total span {
-  font-size: 18px;
-  color: var(--clr-common-black);
+.cartmini__total td {
+  text-align: right;
+
+}
+.cartmini__total table {
+  width: 100%;
 }
 .cartmini__list {
-  height: 575px;
+  height: 450px;
   -ms-overflow-style: none;
   scrollbar-width: none;
   overflow-y: scroll;
@@ -10791,6 +10821,7 @@ p.checkout-coupon input[type=text]:focus {
 .contact__form {
   position: relative;
   z-index: 1;
+  border: 1px solid var(--clr-common-black);
   padding: 95px 100px 100px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
@@ -10807,7 +10838,7 @@ p.checkout-coupon input[type=text]:focus {
 }
 .contact__form-title h3 {
   font-size: 24px;
-  color: #fff;
+  color: var(--clr-common-black);
   font-weight: 400;
 }
 .contact__form-title p {
@@ -10815,19 +10846,22 @@ p.checkout-coupon input[type=text]:focus {
   color: #999999;
   margin-bottom: 20px;
 }
+
 .contact__form-input input, .contact__form-input textarea {
   width: 100%;
   height: 50px;
   line-height: 50px;
   padding: 0 20px;
-  color: var(--clr-common-white) !important;
   border: 1px solid #393939;
+  color: var(--clr-common-white) !important;
+
   margin-bottom: 10px;
   font-size: 14px;
   /* background-color: #282828; */
 }
+
 .contact__form-input input::placeholder, .contact__form-input input::-moz-placeholder, .contact__form-input textarea::placeholder, .contact__form-input textarea::-moz-placeholder {
-  color: var(--clr-common-white) !important;
+  color: var(--clr-common-black) !important;
 }
 .contact__form-input input:focus, .contact__form-input textarea:focus {
   border-color: var(--clr-common-purple);
@@ -10844,15 +10878,15 @@ p.checkout-coupon input[type=text]:focus {
   line-height: 50px;
   padding: 0 20px;
   text-align: center;
-  background-color: var(--clr-common-purple);
+  background-color: var(--clr-common-black);
   color: #fff;
   font-size: 13px;
   font-weight: 500;
   text-transform: uppercase;
 }
 .contact__form-btn:hover {
-  background-color: #fff;
-  color: var(--clr-common-purple);
+  background-color: var(--clr-common-purple);
+  color: var(--clr-common-white);
   border:  1px solid var(--clr-common-purple);
 }
 .contact__address-item {
