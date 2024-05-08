@@ -2072,7 +2072,7 @@ input:-ms-input-placeholder {
   text-transform: uppercase;
   line-height: 1;
   display: block;
-  padding: 56px 0;
+  padding: 35px 0;
   text-decoration: none;
 }
 .header-main ul li:hover > .sub-menu {
@@ -2187,7 +2187,7 @@ input:-ms-input-placeholder {
   position: relative;
 }
 .header-icon a:not(:last-child) {
-  margin-right: 15px;
+  margin-left: 15px;
 }
 .header-icon a :is(span) {
   font-size: 11px;
@@ -4934,9 +4934,9 @@ input:-ms-input-placeholder {
   }
 }
 .header-transparent, .header-area:is(.header-transparent) {
-  position: absolute;
-  left: 0;
+  position: fixed;
   top: 0;
+  left: 0;
   right: 0;
   z-index: 9;
   background-color: var(--clr-common-purple);
@@ -4944,7 +4944,7 @@ input:-ms-input-placeholder {
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .header-transparent, .header-area:is(.header-transparent) {
     position: relative;
-    background: var(--clr-common-black);
+    background: var(--clr-common-purple);
   }
 }
 .header-transparent-2 {
@@ -5009,6 +5009,17 @@ input:-ms-input-placeholder {
   .mobile-header:is(.mobile-header-2) {
     padding: 20px 60px;
   }
+  .logo {
+    padding-right: 40px;
+    width: 150px;
+    height: 100px;
+  }
+  .logo img{
+    width: 100%;
+    height: 100%;
+    /* margin-top: 20px; */
+    margin-left: 15px;
+  }
 }
 
 .header-border {
@@ -5019,10 +5030,24 @@ input:-ms-input-placeholder {
   .logo {
     padding-right: 40px;
   }
+  .logo img{
+    width: 100%;
+    height: 100%;
+    /* margin-top: 10px; */
+    margin-left: 15px;
+  }
 }
 @media (max-width: 575px) {
   .logo {
     padding-right: 0;
+    width: 100px;
+    height: 75px;
+    /* align-self: center; */
+  }
+  .logo img{
+    width: 100%;
+    height: 100%;
+   
   }
 }
 
@@ -5699,7 +5724,7 @@ input:-ms-input-placeholder {
   color: var(--clr-common-white) !important;
 }
 
-.header-sticky.sticky {
+/* .header-sticky.sticky {
   position: fixed;
   top: 0;
   left: 0;
@@ -5710,7 +5735,7 @@ input:-ms-input-placeholder {
   -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
   display: block;
   box-shadow: 0px 10px 20px 0px rgba(8, 0, 42, 0.08);
-}
+} */
 .header-sticky.sticky .header-main ul li > a {
   padding: 35px 0;
 }
@@ -5750,6 +5775,8 @@ input:-ms-input-placeholder {
   width: 20px;
   height: 20px;
   position: relative;
+  top:-2px;
+  left: -5px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -5863,7 +5890,7 @@ input:-ms-input-placeholder {
 .offcanvas__action a .tag {
   display: inline-block;
   position: absolute;
-  top: 0;
+  top: -7px;
   right: 0;
   width: 18px;
   height: 18px;
@@ -6238,9 +6265,16 @@ a#scrollUp:hover span {
 }
 @media (max-width: 575px) {
   a#scrollUp {
-    bottom: 62px;
-    right: -20px;
+    bottom: 30px;
+    right: 20px;
   }
+  a#scrollUp i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+  }
+ 
 }
 
 .footer-social a {
@@ -9447,35 +9481,35 @@ p.checkout-coupon input[type=text]:focus {
   }
 }
 
-.puik-list-product-wrap {
+.logo-list-product-wrap {
   display: flex;
   align-items: center;
 }
 
-.puik-product-list-content {
+.logo-product-list-content {
   margin-left: -15px;
   padding-right: 30px;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
-  .puik-product-list-content {
+  .logo-product-list-content {
     margin-left: 0;
     margin-top: 25px;
   }
 }
-.puik-product-list-content p {
+.logo-product-list-content p {
   color: #666666;
   line-height: 30px;
   margin-bottom: 22px;
 }
-.puik-product-list-content .pro-title {
+.logo-product-list-content .pro-title {
   margin-bottom: 6px;
   padding-bottom: 0;
 }
-.puik-product-list-content .rating {
+.logo-product-list-content .rating {
   margin-bottom: 15px;
 }
 
-.puik-cart-btn {
+.logo-cart-btn {
   border: 1px solid var(--clr-common-black);
   border-radius: 2px;
   background-color: #f6f6f6;
@@ -9489,14 +9523,14 @@ p.checkout-coupon input[type=text]:focus {
   text-transform: uppercase;
   padding: 0 55px;
 }
-.puik-cart-btn:hover {
+.logo-cart-btn:hover {
   background-color: var(--clr-common-purple);
   color: var(--clr-common-white);
   border: 1px solid var(--clr-common-purple);
 
 }
 
-.puik-proudct-btn-boxed {
+.logo-proudct-btn-boxed {
   display: inline-block;
   border-radius: 2px;
   width: 42px;
@@ -9507,17 +9541,17 @@ p.checkout-coupon input[type=text]:focus {
   vertical-align: middle;
   font-size: 15px;
 }
-.puik-proudct-btn-boxed:hover {
+.logo-proudct-btn-boxed:hover {
   background-color: var(--clr-common-black);
   color: var(--clr-common-white);
   border-color: transparent;
 }
 
-.puik-shop-product-actions a {
+.logo-shop-product-actions a {
   margin-right: 6px;
 }
 @media (max-width: 575px) {
-  .puik-shop-product-actions a {
+  .logo-shop-product-actions a {
     margin-bottom: 6px;
   }
 }

@@ -142,11 +142,11 @@
         margin-right: 0;
     }
 }
-.puik-list-product-wrap {
+.logo-list-product-wrap {
     display: flex;
     align-items: center;
 }
-.puik-product-list-content {
+.logo-product-list-content {
     margin-left: -15px;
     padding-right: 30px;
 
@@ -168,7 +168,7 @@
     }
 }
 
-.puik-cart-btn {
+.logo-cart-btn {
     border: 1px solid #e1e1e1;
     border-radius: 2px;
     background-color: #f6f6f6;
@@ -187,7 +187,7 @@
         border-color: transparent;
     }
 }
-.puik-proudct-btn-boxed {
+.logo-proudct-btn-boxed {
     display: inline-block;
     border-radius: 2px;
     width: 42px;
@@ -203,7 +203,7 @@
         border-color: transparent;
     }
 }
-.puik-shop-product-actions {
+.logo-shop-product-actions {
     & a {
         margin-right: 6px;
         @media #{$xs}{
