@@ -1,1 +1,0 @@
-sass --watch D:\Shahnewaz\Dropbox\Shahnewaz\logo\assets\scss\main.scss:D:\Shahnewaz\Dropbox\Shahnewaz\logo\assets\css\main.css
