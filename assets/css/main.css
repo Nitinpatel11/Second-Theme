@@ -10300,6 +10300,9 @@ align-items: center;
   .about__title-area p {
     padding: 0;
   }
+  .about__history{
+    padding-top: 55px;
+  }
 }
 .about__history-title {
   font-size: 36px;
