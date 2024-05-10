@@ -1943,7 +1943,8 @@ input:-ms-input-placeholder {
 }
 
 .pt-240 {
-  margin-top: 95px;
+  padding-top: 240px;
+  
 }
 
 .pt-215 {
@@ -2913,7 +2914,7 @@ input:-ms-input-placeholder {
 
 .single-blog p {
   margin-bottom: 0;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   color: var(--clr-soft-gray-2);
 }
 .single-blog-6 {
@@ -2925,7 +2926,7 @@ input:-ms-input-placeholder {
   }
 }
 .blog-content {
-  padding: 40px 0;
+  padding: 20px 0;
   padding-right: 3px;
 }
 .blog-content:is(.blog-content-2) {
@@ -3032,7 +3033,7 @@ input:-ms-input-placeholder {
   font-weight: var(--fw-bold);
   line-height: 1.333;
   margin-bottom: 0;
-  padding-bottom: 21px;
+  padding-bottom: 10px;
   -webkit-transition: all 0.2s linear 0s;
   -moz-transition: all 0.2s linear 0s;
   -ms-transition: all 0.2s linear 0s;
@@ -8137,7 +8138,7 @@ hr {
   height: 35px;
   line-height: 35px;
   text-transform: uppercase;
-  margin-right: 30px;
+  margin-left: 7px;
 }
 .product-filter-btn-4 {
   margin-right: 0;
@@ -9481,15 +9482,39 @@ p.checkout-coupon input[type=text]:focus {
   margin-top: 10px !important;
 }
 }
+@media (min-width: 1024px) and (max-width: 1440px) {
+ 
+  .shop-top-right-4{
+   margin-top: 15px;
+    /* justify-content: start !important; */
+  }}
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .shop-top-left-2 {
     margin-bottom: 15px;
   }
+ 
 }
+@media only screen  and (max-width: 768px) {
+  .shop-top-left-2 {
+    margin-bottom: 15px;
+  }
+  .shop-top-right-4{
+    justify-content: start !important;
+  }
+ 
+}
+
 @media (max-width: 575px) {
   .shop-top-left-3 > span {
     margin-top: 15px;
     display: block;
+  }
+  
+}
+@media (max-width: 320px) {
+  
+  .shop-top-right-4{
+    justify-content: center !important;
   }
 }
 .shop-top-right .select-default .list {
@@ -9519,11 +9544,24 @@ p.checkout-coupon input[type=text]:focus {
   font-size: 14px;
   color: #666666;
   margin-bottom: 0;
+  /* margin-top: 5px; */
+  margin-left: 20px;
+}
+.show-total-result-1 {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 0;
   margin-top: 5px;
+  margin-left: -14px;
 }
 @media (max-width: 575px) {
   .show-total-result {
     margin-bottom: 15px;
+    margin-left: 0px;
+  }
+  .show-total-result-1 {
+    
+    margin-left: 0px;
   }
 }
 .show-total-result-4 {
@@ -9554,13 +9592,32 @@ p.checkout-coupon input[type=text]:focus {
   max-width: 168px;
   margin-left: auto;
 }
+@media (min-width: 1440px){
+  .show-total-result {
+    margin-left: -185px;
+     margin-top: 5px;
+   }
+}
+/* @media (min-width: 1024px){
+  .show-total-result {
+    margin-left: 20px;
+     margin-top: 5px;
+   }
+} */
+@media (min-width: 991px) and (max-width:1024px){
+  .show-total-result {
+    margin-left: -50px;
+     margin-top: -12px;
+     /* padding-top: 10px; */
+   }
+}
 @media (min-width: 768px) and (max-width: 991px) {
   .select-default .nice-select {
     margin-left: auto;
   }
   .show-total-result {
-   
-    margin-top: 15px;
+   margin-left: -85px;
+    margin-top: -12px;
   }
   .text-margin{
     margin-top: 10px;
@@ -9616,10 +9673,18 @@ p.checkout-coupon input[type=text]:focus {
   align-items: center;
 }
 
-.logo-product-list-content {
-  margin-left: -15px;
-  padding-right: 30px;
+
+  .logo-product-list-content {
+    margin-left: -15px;
+    padding-right: 30px;
+    /* margin-top: -80px; */
+  }
+  @media only screen and (min-width: 991px) {
+    .logo-product-list-content {
+    /* margin-top: -80px; */
+  }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .logo-product-list-content {
     margin-left: 0;
@@ -9629,7 +9694,7 @@ p.checkout-coupon input[type=text]:focus {
 .logo-product-list-content p {
   color: #666666;
   line-height: 30px;
-  margin-bottom: 22px;
+  /* margin-bottom: 22px; */
 }
 .logo-product-list-content .pro-title {
   margin-bottom: 6px;
@@ -9681,7 +9746,7 @@ align-items: center;
 }
 
 .logo-shop-product-actions a {
-  margin-right: 6px;
+  /* margin-right: 6px; */
 }
 @media (max-width: 575px) {
   .logo-shop-product-actions a {
