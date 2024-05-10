@@ -1473,6 +1473,7 @@ a {
 }
 
 .fix {
+  margin-top: 3px;
   overflow: hidden;
 }
 
@@ -1942,7 +1943,7 @@ input:-ms-input-placeholder {
 }
 
 .pt-240 {
-  padding-top: 240px;
+  margin-top: 95px;
 }
 
 .pt-215 {
@@ -2816,7 +2817,7 @@ input:-ms-input-placeholder {
 }
 
 .product-content {
-  padding: 28px 0;
+  padding: 10px 0 25px;
 }
 
 .countdown {
@@ -3341,6 +3342,7 @@ input:-ms-input-placeholder {
     padding-bottom: 75px !important;
   }
   .shop-top-left{
+  
     padding-bottom: 15px !important;
   }
  
@@ -3394,7 +3396,7 @@ input:-ms-input-placeholder {
   top: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 .banner-content {
   position: relative;
@@ -5219,8 +5221,8 @@ z-index: 999;
 }
 
 :is(.single-category) .cat-thumb{
-  width: 95%;
-  margin: auto;
+  width: 100%;
+  
 }
 :is(.single-category) .cat-thumb img {
   max-width: 100%;
@@ -9465,9 +9467,7 @@ p.checkout-coupon input[type=text]:focus {
   background: none;
   width: 100px;
 }
-.shop-top-left{
-  margin-top: 10px !important;
-}
+
 .shop-top-left > span {
   font-size: 14px;
   color: #666666;
@@ -9477,6 +9477,9 @@ p.checkout-coupon input[type=text]:focus {
   .shop-top-left > span {
     margin-right: 8px;
   }
+  .shop-top-left{
+  margin-top: 10px !important;
+}
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .shop-top-left-2 {
@@ -9516,7 +9519,7 @@ p.checkout-coupon input[type=text]:focus {
   font-size: 14px;
   color: #666666;
   margin-bottom: 0;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 @media (max-width: 575px) {
   .show-total-result {
@@ -9554,6 +9557,13 @@ p.checkout-coupon input[type=text]:focus {
 @media (min-width: 768px) and (max-width: 991px) {
   .select-default .nice-select {
     margin-left: auto;
+  }
+  .show-total-result {
+   
+    margin-top: 15px;
+  }
+  .text-margin{
+    margin-top: 10px;
   }
 }
 @media (max-width: 575px) {
@@ -10302,6 +10312,9 @@ align-items: center;
   }
   .about__history{
     padding-top: 55px;
+  }
+  .team__area{
+    padding-top: 45px;
   }
 }
 .about__history-title {
@@ -11284,6 +11297,7 @@ align-items: center;
 .basic-login {
   padding: 90px;
   border: 2px solid #eaedff;
+
 }
 .basic-login .s-btn {
   text-transform: uppercase;
