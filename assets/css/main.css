@@ -9595,8 +9595,14 @@ p.checkout-coupon input[type=text]:focus {
 @media (min-width: 1440px){
   .show-total-result {
     margin-left: -185px;
-     margin-top: 5px;
+     /* margin-top: 5px; */
    }
+   .shop-sidebar-area{
+    margin-top: 20px;
+   }
+   /* .select-default{
+    margin-top: -25px;
+   } */
 }
 /* @media (min-width: 1024px){
   .show-total-result {
@@ -9604,11 +9610,17 @@ p.checkout-coupon input[type=text]:focus {
      margin-top: 5px;
    }
 } */
-@media (min-width: 991px) and (max-width:1024px){
+@media (min-width: 991px) and (max-width:1440px){
   .show-total-result {
     margin-left: -50px;
-     margin-top: -12px;
+     /* margin-top: 5px; */
      /* padding-top: 10px; */
+   }
+   .shop-sidebar-area{
+    margin-top: 10px;
+   }
+   .select-default{
+    margin-top: -10px;
    }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -9617,7 +9629,7 @@ p.checkout-coupon input[type=text]:focus {
   }
   .show-total-result {
    margin-left: -85px;
-    margin-top: -12px;
+    margin-top: 10px;
   }
   .text-margin{
     margin-top: 10px;
@@ -9677,18 +9689,34 @@ p.checkout-coupon input[type=text]:focus {
   .logo-product-list-content {
     margin-left: -15px;
     padding-right: 30px;
-    /* margin-top: -80px; */
+    margin-top: -105px;
   }
-  @media only screen and (min-width: 991px) {
-    .logo-product-list-content {
-    /* margin-top: -80px; */
+  @media only screen and (min-width: 1440px) {
+    .logo-product-list-content{
+      margin-top:-100px;
+    }
+}
+ @media only screen and (max-width: 1024px) {
+  .logo-product-list-content{
+    margin-top:0px;
   }
 }
+@media only screen and (max-width: 991px) {
+  .logo-product-list-content{
+    margin-top:-3px;
+  }
+  .logo-product-list-content p{
+    line-height: 25px !important;
+  }
+}  
 
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .logo-product-list-content {
     margin-left: 0;
-    margin-top: 25px;
+    margin-top: 15px;
+  }
+  .logo-product-list-content p{
+    line-height:  25px !important;
   }
 }
 .logo-product-list-content p {
@@ -9762,6 +9790,9 @@ align-items: center;
   .shop-sidebar-area {
     padding-right: 0;
     margin-top: 50px;
+  }
+  .logo-product-list-content{
+    margin-top:-3px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
