@@ -19,7 +19,7 @@
   --clr-common-black-2: #444444;
   --clr-common-black-3: #333333;
   --clr-common-gray: #777;
-  --clr-common-purple: #885df1;;
+  --clr-common-purple: #7AB2B2;;
   --clr-common-body-text-color: #899399;
   --clr-common-orange: #ffae00;
   --clr-common-hr-border-color: #eceff8;
@@ -5120,6 +5120,17 @@ input:-ms-input-placeholder {
   border-radius: 50%;
   background-color: var(--clr-common-purple);
 }
+.logo{
+  width: 120px;
+  height: 75px;
+/* background-color: red; */
+padding-top: 15px;
+}
+.logo img{
+  width: 100%;
+  height: 75%;
+  /* object-fit: cover; */
+}
 @media (min-width: 768px) and (max-width: 991px) {
   .mobile-header:is(.mobile-header-2) {
     padding: 20px 60px;
@@ -6240,6 +6251,7 @@ z-index: 999;
   font-weight: 600;
   margin-bottom: 0;
   padding-bottom: 29px;
+  color: var(--clr-common-white);
 }
 .f-widget-title:is(.white-color) {
   color: var(--clr-common-white);
@@ -6272,6 +6284,11 @@ z-index: 999;
   font-size: 14px;
   display: block;
   color: var(--clr-soft-gray-2);
+}
+.footer-align{
+  /* background-color : red; */
+  /* width: 80%; */
+  /* margin: auto; */
 }
 .footer-1 ul li a:hover {
   /* padding-left: 12px; */
