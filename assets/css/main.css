@@ -3737,6 +3737,12 @@ input:-ms-input-placeholder {
   .coupon-area{
     padding-top: 20px;
   }
+  .top-selling-product{
+    padding-bottom: 35px !important;
+  }
+  .category-area{
+    margin-top: 65px !important;
+  }
 } 
 
 .single-blog a {
@@ -4565,7 +4571,15 @@ input:-ms-input-placeholder {
     display: none;
   }
 }
-
+@media only screen and (max-width:768px){
+  .slider-area {
+    margin-top: 0px;
+    padding-bottom: 0px !important;
+  }
+  .single-slider {
+    /* min-height: 0px !important; */
+  }
+}
 .slider-content-3 {
   margin-left: -115px;
 }
@@ -4581,7 +4595,7 @@ input:-ms-input-placeholder {
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .slider-content-3 {
-    margin-top: 70px;
+    margin-top: 30px;
     margin-left: 10px;
   }
 }
@@ -4647,7 +4661,7 @@ input:-ms-input-placeholder {
 
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
   .slider-content-5 {
-    margin-left: -35px;
+    /* margin-left: -35px; */
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -4910,13 +4924,47 @@ input:-ms-input-placeholder {
   .single-slider {
     min-height: 580px;
   }
+  
 }
-@media (max-width: 575px) {
+/* @media (max-width: 992px) {
   .single-slider {
-    min-height: 545px;
+    min-height: 360px !important;
+    width: 100%;
+    background-position: right;
+  }
+} */
+@media only screen  and (max-width: 768px) {
+  .single-slider {
+    min-height: 432px !important;
+    width: 100%;
     background-position: right;
   }
 }
+@media only screen  and (max-width: 575px) {
+  .single-slider {
+    min-height: 478px !important;
+    width: 100%;
+    background-position: right;
+  }
+}
+@media only screen  and (max-width: 375px) {
+  .single-slider {
+    min-height: 425px !important;
+    width: 100%;
+    background-position: left;
+  }
+}
+@media only screen  and (min-width: 1440px) {
+  .single-slider {
+    min-height: 810px !important;
+    width: 100%;
+    
+    /* background-position: left; */
+  }
+}
+
+
+
 .single-slider-2 {
   background-position: center;
 }
@@ -4925,6 +4973,7 @@ input:-ms-input-placeholder {
   .slider-height-4 {
     min-height: 780px;
   }
+  
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider-height-4 {
@@ -9292,6 +9341,11 @@ p.checkout-coupon input[type=text]:focus {
     padding-bottom: 5px !important;
   }
  
+}
+@media only screen and (max-width:768px){
+  .breadcrumb-list-2{
+    padding: 30px 0 0px !important;
+  }
 }
 .product__details-nav-wrapper{
   direction: rtl;
