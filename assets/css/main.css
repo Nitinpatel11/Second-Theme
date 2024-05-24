@@ -9251,7 +9251,7 @@ p.checkout-coupon input[type=text]:focus {
 }
 
 .breadcrumb-list-2 {
-  padding: 30px 0;
+  padding: 30px 0 45px;
 }
 .breadcrumb-list-2 .breadcrumb {
   margin-bottom: 0;
@@ -9292,6 +9292,9 @@ p.checkout-coupon input[type=text]:focus {
     padding-bottom: 5px !important;
   }
  
+}
+.product__details-nav-wrapper{
+  direction: rtl;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .breadcrumb-area-2 {
